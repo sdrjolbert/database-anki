@@ -10,7 +10,7 @@ function selectQuery(path) {
       (err, tables) => {
         if (err) {
           console.log(`Erro ao obter lista de tabelas: ${err}`);
-          db.close(); // fechar conexão se houver erro
+          db.close();
           return;
         }
 
